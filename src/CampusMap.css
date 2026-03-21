@@ -1,0 +1,14 @@
+/* src/CampusMap.css */
+.campus-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.campus-map-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+}
