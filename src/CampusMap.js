@@ -14,12 +14,16 @@ const nodes = [
   return (
     <div>
       {/* Button outside the map container */}
-      <button onClick={() => alert("Hello!")}>
-        Click Me
-      </button>
+     
 
       <div className="campus-map-container">
+     <button onClick={() => alert("Hello!")}>
+        Click Me
+      </button>
         <img src={campusImage} alt="Campus Map" className="campus-map-image" />
+     <button onClick={() => alert("Hello!")}>
+        Click Me
+      </button>
 
         {nodes.map((node) => (
           <button
