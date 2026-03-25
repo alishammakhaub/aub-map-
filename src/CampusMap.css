@@ -1,14 +1,13 @@
 /* src/CampusMap.css */
 .campus-map-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+  position: relative;   /* Needed for buttons to overlay */
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;    /* center the container horizontally */
 }
 
 .campus-map-image {
   width: 100%;
-  max-width: 1200px;
   height: auto;
   display: block;
 }
