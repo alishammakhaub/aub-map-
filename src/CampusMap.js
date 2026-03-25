@@ -24,17 +24,17 @@ const CampusMap = () => {
           key={node.name}
           onClick={() => handleClick(node.name)}
           style={{
-            position: "absolute",
-            top: node.top,
-            left: node.left,
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "red",
-            borderRadius: "50%",
-            width: "25px",
-            height: "25px",
-            border: "none",
-            cursor: "pointer",
-          }}
+             position: "absolute",
+      top: node.top,
+      left: node.left,
+      transform: "translate(-50%, -50%)",
+      backgroundColor: "rgba(255, 0, 0, 0.5)", // semi-transparent red
+      borderRadius: "50%",                     // makes it circular
+      width: "60px",                           // bigger circle
+      height: "60px",
+      border: "2px solid red",                 // optional border
+      cursor: "pointer",
+    }}
         ></button>
       ))}
     </div>
