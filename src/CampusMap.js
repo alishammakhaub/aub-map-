@@ -1,7 +1,7 @@
 // src/CampusMap.js
 import React from "react";
 import "./CampusMap.css";
-import campusImage from "./campus-map.png.jpg";
+import campusImage from "./campus-map.png"; // correct file extension
 
 const nodes = [
   { name: "Library", top: "20%", left: "30%" },
