@@ -16,6 +16,9 @@ const CampusMap = () => {
     alert(`You clicked on ${building}`);
   };
   return (
+    <button onClick={() => alert("Hello!")}>
+        Click Me
+      </button>
     <div className="campus-map-container">
       <img src={campusImage} alt="Campus Map" className="campus-map-image" />
 
