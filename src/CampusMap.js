@@ -26,8 +26,8 @@ const CampusMap = () => {
     onClick={() => handleClick(node.name)}
     style={{
       position: "absolute",
-      top: node.top,
-      left: node.left,
+top: "100px",
+left: "200px",
       transform: "translate(-50%, -50%)",
       width: "60px",
       height: "60px",
