@@ -19,26 +19,28 @@ const CampusMap = () => {
     <div className="campus-map-container">
       <img src={campusImage} alt="Campus Map" className="campus-map-image" />
 
-      {nodes.map((node) => (
-        <button
-          key={node.name}
-          onClick={() => handleClick(node.name)}
-          style={{
-             position: "absolute",
+{nodes.map((node) => (
+  <button
+    key={node.name}
+    title={node.name}
+    onClick={() => handleClick(node.name)}
+    style={{
+      position: "absolute",
       top: node.top,
       left: node.left,
       transform: "translate(-50%, -50%)",
-      backgroundColor: "rgba(255, 0, 0, 0.5)", // semi-transparent red
-      borderRadius: "50%",                     // makes it circular
-      width: "60px",                           // bigger circle
+      width: "60px",
       height: "60px",
-      border: "2px solid red",                 // optional border
+      borderRadius: "50%",
+      backgroundColor: "rgba(255, 0, 0, 0.5)",
+      border: "2px solid red",
       cursor: "pointer",
+      zIndex: 10, // bring the circle above the image
     }}
-  onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.8)")}
-  onMouseLeave={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.5)")}
-        ></button>
-      ))}
+    onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.8)")}
+    onMouseLeave={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.5)")}
+  ></button>
+))}
     </div>
   );
 };
