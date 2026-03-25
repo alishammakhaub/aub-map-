@@ -31,7 +31,7 @@ const CampusMap = () => {
       backgroundColor: "rgba(255, 0, 0, 0.5)", // semi-transparent red
       borderRadius: "50%",                     // makes it circular
       width: "60px",                           // bigger circle
-      height: "60px",
+      height: "61px",
       border: "2px solid red",                 // optional border
       cursor: "pointer",
     }}
