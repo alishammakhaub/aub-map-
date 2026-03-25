@@ -1,9 +1,10 @@
 /* src/CampusMap.css */
+/* src/CampusMap.css */
 .campus-map-container {
-  position: relative;   /* Needed for buttons to overlay */
+  position: relative; /* required for absolute buttons */
   width: 100%;
   max-width: 1200px;
-  margin: 20px auto;    /* center the container horizontally */
+  margin: 20px auto; /* center horizontally */
 }
 
 .campus-map-image {
