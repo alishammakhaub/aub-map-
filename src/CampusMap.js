@@ -35,6 +35,8 @@ const CampusMap = () => {
       border: "2px solid red",                 // optional border
       cursor: "pointer",
     }}
+  onMouseEnter={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.8)")}
+  onMouseLeave={(e) => (e.target.style.backgroundColor = "rgba(255,0,0,0.5)")}
         ></button>
       ))}
     </div>
